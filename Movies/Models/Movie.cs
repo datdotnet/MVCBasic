@@ -15,5 +15,11 @@ namespace Movies.Models
     public class MovieDBContext : DbContext
     {
         public DbSet<Movie> Movies { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
+        
     }
 }
