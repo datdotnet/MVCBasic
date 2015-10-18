@@ -176,6 +176,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510181500204_Initial.cs" />
+    <Compile Include="Migrations\201510181500204_Initial.Designer.cs">
+      <DependentUpon>201510181500204_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510181513435_Rating.cs" />
+    <Compile Include="Migrations\201510181513435_Rating.Designer.cs">
+      <DependentUpon>201510181513435_Rating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510181614049_DataAnnotations.cs" />
+    <Compile Include="Migrations\201510181614049_DataAnnotations.Designer.cs">
+      <DependentUpon>201510181614049_DataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -216,12 +229,12 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
+    <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
+    </None>
+    <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
-    </Content>
+    </None>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
@@ -263,6 +276,17 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510181500204_Initial.resx">
+      <DependentUpon>201510181500204_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510181513435_Rating.resx">
+      <DependentUpon>201510181513435_Rating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510181614049_DataAnnotations.resx">
+      <DependentUpon>201510181614049_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
